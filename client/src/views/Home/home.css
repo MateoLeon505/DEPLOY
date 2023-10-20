@@ -1,0 +1,109 @@
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLoading{
+    display: flex;
+    position: absolute;
+    right: 35%;
+    height: 70vh;
+}
+
+
+.title-drivers{
+    font-family: 'Raceline';
+    font-size: 70px;
+    position: absolute; /* Posición fija */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Trasladar el título hacia arriba la mitad de su altura y hacia la izquierda la mitad de su ancho */
+    color:#9f0602; /* Cambia el color del texto para que sea visible en la imagen */
+    margin-top: -2%;
+    text-align: center;
+}
+.back-buttonSearch{
+    font-size: 0.9rem;
+    position: absolute; 
+    top: 5rem;
+    left: 0.5rem;
+    color: #F0E5E3;
+    border: 0.1rem solid #2A403C;
+    background-color:  #1B2A27;
+    border-radius: 1rem;
+}
+.back-buttonSearch:hover{
+    background-color: #2A403C;
+    border: 0.1rem solid #1B2A27;
+}
+@font-face 
+{
+    font-family: 'icons_socialmedia'; /* Nombre de la fuente */
+    src: url('../../fonts/font_socialMedia.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+.icons-media{
+    font-family: 'icons_socialmedia';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: #F0E5E3;
+    margin-right: 0.5rem;
+}
+.icons-media:hover{
+    font-family: 'icons_socialmedia';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: #F0E5E3;
+    margin-right: 0.5rem;
+}
+.footer{
+    background-color: #2A403C; 
+    padding: 1rem; 
+    text-align: center; 
+    position:static;
+    width: 100%;
+    bottom: 0;
+    height: 18%;
+    width: 100%;
+    z-index: 100; /* Asegúrate de que esté encima de otros elementos */
+    box-sizing: border-box; /* Asegura que el ancho y alto incluyan el relleno y el borde */
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .loading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imageLoading{
+        left: -1rem;
+        height: 50vh;
+    }
+    .title-drivers{
+        font-size: 3rem;
+        position: absolute; 
+        top: 9.3rem;
+        text-align: center;
+    }
+    .back-buttonSearch{
+        font-size: 0.8rem;
+        position: absolute; 
+        top: 8rem;
+        border-radius: 1rem;
+    }
+
+    .icons-media{
+        font-size: 1.5rem;
+    }
+    .footer{
+        width: 100%;
+    }
+    .text-footer{
+        font-size: 0.9rem;
+    }
+
+}

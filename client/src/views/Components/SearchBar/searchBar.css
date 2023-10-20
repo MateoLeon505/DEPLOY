@@ -1,0 +1,71 @@
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; /* Cambio de dirección para poner el botón a la derecha */
+}
+.search{
+    background-color: #1B2A27;
+    height: 2.1rem;
+    width: 2rem;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    position: absolute;
+    border-radius: 0 0.7rem 0.7rem 0;
+    border: 0.1rem solid #1B2A27;
+}
+.search:hover{
+    border: 0.1rem solid #F0E5E3;
+}
+@font-face 
+{
+    font-family: 'heydings_icons'; /* Nombre de la fuente */
+    src: url('../../../fonts/heydings_icons.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+.lupa{
+    font-family: 'heydings_icons';
+    font-size: 1.5rem;
+    color: #F0E5E3;
+}
+.input-driver{
+    height: 2.1rem;
+    width: 9.4rem;
+    border-radius: 0.7rem 0 0 0.7rem;
+    background-color: #ACB2B6;
+    border: 0.1rem solid #1B2A27;
+    font-size: 0.9rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1B2A27;
+    margin-right: 2.8rem;
+}
+.input-driver:focus {
+    border: 0.1rem solid #1B2A27; /* Cambia el color del borde cuando el input está enfocado */
+    outline: none; /* Quita el contorno predeterminado que algunos navegadores aplican al input enfocado */
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        display: flex;
+        position:absolute;
+        margin-top: 0.2rem;
+    }
+    .search{
+        height: 1.8rem;
+        width: 0.8rem;
+        display: flex;
+        border-radius: 0 0.9rem 0.9rem 0;
+        border: 0.1rem solid #1B2A27;
+    }
+    .lupa{
+        font-size: 0.8em;
+    }
+    .input-driver{
+        height: 1.7rem;
+        width: 7.2rem;
+        border-radius: 0.7rem 0 0 0.7rem;
+        font-size: 0.79rem;
+    }
+}
