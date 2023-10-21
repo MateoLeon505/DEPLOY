@@ -1,9 +1,9 @@
 // Este módulo tiene la responsabilidad de iniciar la aplicación
 //--------------------------------------
-const axios = require("axios");
 const server = require("./src/server");
 const { conn } = require('./src/db.js');
-const PORT = 3001;
+require('dotenv').config();
+const {PORT} = process.env;
 //--------------------------------------
 // Sincronizando todos las modelos a la vez
 conn.sync({ alter: true }).then(() => 
